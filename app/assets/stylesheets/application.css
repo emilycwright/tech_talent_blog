@@ -20,10 +20,19 @@
 
 .container {
       background: rgba(255,255,255,0.8);
+      margin-top: 25px;
+      margin-bottom: 25px;
+      padding-bottom: 10px;
+      border-radius: 10px;
 }
     
 html body {
-    background-color:#D3FFE9;
+    background-color:#FED18C;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+}
+
+.btn-custom3 {
+    background: #BDD4E7;
+    color: #ffffff;
 }
