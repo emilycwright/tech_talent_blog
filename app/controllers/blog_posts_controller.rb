@@ -1,5 +1,12 @@
 class BlogPostsController < ApplicationController
   before_action :set_blog_post, only: [:show, :edit, :update, :destroy]
+  
+  def your_posts
+  end
+  
+  def user_posts
+    @user = User.find(params[:id])
+  end
 
   # GET /blog_posts
   # GET /blog_posts.json
@@ -72,4 +79,5 @@ class BlogPostsController < ApplicationController
     def blog_post_params
       params.require(:blog_post).permit(:title, :author, :blog_entry, :user_id)
     end
+    
 end
